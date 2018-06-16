@@ -108,7 +108,8 @@ class ScoringService(object):
         input_std = 128
         input_layer = "Mul"
         output_layer = "final_result"
-        file_name = "/opt/ml/input/data/train/labelthis.jpg"
+        #file_name = "/opt/ml/input/data/train/labelthis.jpg"
+        file_name = "/tmp/labelthis.jpg"
         clf = cls.get_model()
         print("Input: " + input)
         urllib.urlretrieve (input,file_name)
