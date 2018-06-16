@@ -36,7 +36,7 @@ RUN pip --no-cache-dir install \
         pandas \
         h5py
 
-WORKDIR /root
+WORKDIR /opt/program
 
 RUN pip install numpy boto3 six awscli flask==0.11 Jinja2==2.9 tensorflow-serving-api==1.5 gevent gunicorn
 
